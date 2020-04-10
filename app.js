@@ -19,7 +19,7 @@ let hero = {
   attack: attackEnemy() + 5,
 };
 
-let pantyWaste = false;
+let coward = false;
 
 function startGame() {
   let enemies = [
@@ -93,7 +93,7 @@ function startGame() {
         );
         return;
       }
-      pantyWaste = true;
+      coward = true;
       break;
     } else {
       console.log(
@@ -140,7 +140,7 @@ function startGame() {
       return;
     }
   }
-  if (!pantyWaste) {
+  if (!coward) {
     alert(
       "You are victorious!  You killed all the enemies, your name will forever be famous, YOU WIN!!!"
     );
